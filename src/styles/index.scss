@@ -1,0 +1,121 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+*{
+  margin:0;
+  padding:0;
+}
+ul{
+  li{
+    list-style: none;
+  }
+}
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app{
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+div:focus{
+  outline: none;
+ }
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+//main-container全局样式
+.app-main{
+  min-height: 100%
+}
+
+.app-container {
+  padding: 20px;
+}
+.el-form-item{
+  margin-bottom:15px;
+}
+.search-group{
+  .el-form-item{
+    margin-bottom:5px;
+  }
+}
+.el-dialog--center {
+  .el-dialog__body{
+    padding:15px 25px 10px;
+  }
+}
+
+.operate-btn-group{
+  margin-bottom:10px;
+}
+
+#app .main-container{
+  height:100%;
+}
+.app-wrapper{
+  overflow: hidden;
+}
+
+.app-main{
+  min-height:calc(100vh - 100px)!important;
+  height:calc(100vh - 100px)!important;
+  overflow: auto!important;
+}
+
+.el-form-item__content{
+  line-height:1;
+}

@@ -1,0 +1,20 @@
+export default [
+    {
+        path:'salesRank',
+        url:'views/sales/salesRank',
+        title:'业绩排行',
+        icon:'example'
+    },
+    {
+        path:'salesIndex',
+        url:'views/sales/index',
+        title:'销售首页',
+        icon:'example'
+    },
+    {
+        path:'publicSea',
+        url:'views/sales/publicSea',
+        title:'公海',
+        icon:'example'
+    },
+]
