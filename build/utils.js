@@ -30,6 +30,14 @@ exports.cssLoaders = function(options) {
     }
   }
 
+  const minicssLoader = {
+    loader: MiniCssExtractPlugin.loader,
+    options: {
+      publicPath: '../../',
+      sourceMap: options.sourceMap
+    }
+  }
+
   // generate loader string to be used with extract text plugin
   function generateLoaders(loader, loaderOptions) {
     const loaders = []
@@ -37,7 +45,7 @@ exports.cssLoaders = function(options) {
     // Extract CSS when that option is specified
     // (which is the case during production build)
     if (options.extract) {
-      loaders.push(MiniCssExtractPlugin.loader)
+      loaders.push(minicssLoader)
     } else {
       loaders.push('vue-style-loader')
     }
